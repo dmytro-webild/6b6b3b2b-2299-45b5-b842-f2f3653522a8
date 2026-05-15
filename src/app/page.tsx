@@ -10,7 +10,7 @@ import TestimonialCardFifteen from "@/components/sections/testimonial/Testimonia
 import FaqSplitMedia from "@/components/sections/faq/FaqSplitMedia";
 import ContactCenter from "@/components/sections/contact/ContactCenter";
 import FooterBaseCard from "@/components/sections/footer/FooterBaseCard";
-import { Mail, Leaf, Droplet, Sprout, Wind } from "lucide-react";
+import { Mail, Leaf, Droplet, Sprout, Wind, ShieldCheck } from "lucide-react";
 
 export default function SkincareTemplatePage() {
     return (
@@ -77,25 +77,13 @@ export default function SkincareTemplatePage() {
                     description="Discover our carefully curated skincare essentials designed to nourish and revitalize your skin. Worldwide shipping available."
                     products={[
                         {
-                            id: "1",
-                            name: "Hydrating Moisturizer",
-                            price: "$68",
-                            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image2.webp",
-                            imageAlt: "Hydrating Moisturizer bottle"
+                            id: "1",                            name: "Hydrating Moisturizer",                            price: "$68",                            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image2.webp",                            imageAlt: "Hydrating Moisturizer bottle"
                         },
                         {
-                            id: "2",
-                            name: "Radiance Serum",
-                            price: "$85",
-                            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image3.webp",
-                            imageAlt: "Radiance Serum bottle"
+                            id: "2",                            name: "Radiance Serum",                            price: "$85",                            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image3.webp",                            imageAlt: "Radiance Serum bottle"
                         },
                         {
-                            id: "3",
-                            name: "Purifying Face Mask",
-                            price: "$52",
-                            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image1.webp",
-                            imageAlt: "Purifying Face Mask jar"
+                            id: "3",                            name: "Purifying Face Mask",                            price: "$52",                            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image1.webp",                            imageAlt: "Purifying Face Mask jar"
                         }
                     ]}
                     gridVariant="three-columns-all-equal-width"
@@ -109,22 +97,17 @@ export default function SkincareTemplatePage() {
                 <FeatureBento
                     title="Why Choose Luminé"
                     description="Scientifically-formulated skincare products that deliver visible results with natural, sustainable ingredients. Available for worldwide shipping."
+                    tag="60-Day Satisfaction Guarantee"
+                    tagIcon={ShieldCheck}
                     features={[
                         {
-                            title: "Worldwide Shipping",
-                            description: "Fast and reliable delivery to over 150 countries worldwide",
-                            bentoComponent: "globe"
+                            title: "Worldwide Shipping",                            description: "Fast and reliable delivery to over 150 countries worldwide",                            bentoComponent: "globe"
                         },
                         {
-                            title: "Clinically Proven",
-                            description: "Dermatologist-tested and proven effective in clinical trials",
-                            bentoComponent: "line-chart"
+                            title: "Clinically Proven",                            description: "Dermatologist-tested and proven effective in clinical trials",                            bentoComponent: "line-chart"
                         },
                         {
-                            title: "Sustainable",
-                            description: "Eco-conscious packaging and ethical sourcing practices",
-                            bentoComponent: "orbiting-icons",
-                            centerIcon: Leaf,
+                            title: "Sustainable",                            description: "Eco-conscious packaging and ethical sourcing practices",                            bentoComponent: "orbiting-icons",                            centerIcon: Leaf,
                             items: [
                                 { icon: Droplet, ring: 1 },
                                 { icon: Sprout, ring: 2 },
@@ -161,24 +144,16 @@ export default function SkincareTemplatePage() {
                     description="Everything you need to know about our skincare products, worldwide shipping, and delivery."
                     faqs={[
                         {
-                            id: "1",
-                            title: "How long does it take to see results?",
-                            content: "Most customers notice visible improvements in skin texture and radiance within 2-4 weeks of consistent use. For more significant results like reduced fine lines or hyperpigmentation, allow 6-8 weeks."
+                            id: "1",                            title: "How long does it take to see results?",                            content: "Most customers notice visible improvements in skin texture and radiance within 2-4 weeks of consistent use. For more significant results like reduced fine lines or hyperpigmentation, allow 6-8 weeks."
                         },
                         {
-                            id: "2",
-                            title: "Are your products suitable for sensitive skin?",
-                            content: "Yes! All Luminé products are formulated to be gentle and non-irritating. We use natural ingredients and avoid common irritants. We recommend patch testing first if you have very reactive skin."
+                            id: "2",                            title: "Are your products suitable for sensitive skin?",                            content: "Yes! All Luminé products are formulated to be gentle and non-irritating. We use natural ingredients and avoid common irritants. We recommend patch testing first if you have very reactive skin."
                         },
                         {
-                            id: "3",
-                            title: "Do you offer worldwide shipping?",
-                            content: "Absolutely! We ship to over 150 countries worldwide. Standard shipping typically takes 7-14 business days depending on your location. Express shipping options are also available for faster delivery."
+                            id: "3",                            title: "Do you offer worldwide shipping?",                            content: "Absolutely! We ship to over 150 countries worldwide. Standard shipping typically takes 7-14 business days depending on your location. Express shipping options are also available for faster delivery."
                         },
                         {
-                            id: "4",
-                            title: "What is your return policy?",
-                            content: "We offer a 60-day satisfaction guarantee on all purchases. If you're not completely happy with your skincare, return it for a full refund or exchange. Worldwide returns are processed efficiently through our international shipping partners."
+                            id: "4",                            title: "What is your return policy?",                            content: "We offer a 60-day satisfaction guarantee on all purchases. If you're not completely happy with your skincare, return it for a full refund or exchange. Worldwide returns are processed efficiently through our international shipping partners."
                         }
                     ]}
                     imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/skincare/image4.webp"
@@ -211,8 +186,7 @@ export default function SkincareTemplatePage() {
                     logoText="Luminé"
                     columns={[
                         {
-                            title: "Product",
-                            items: [
+                            title: "Product",                            items: [
                                 { label: "Moisturizers", href: "#products" },
                                 { label: "Serums", href: "#products" },
                                 { label: "Masks", href: "#products" },
@@ -220,8 +194,7 @@ export default function SkincareTemplatePage() {
                             ]
                         },
                         {
-                            title: "Company",
-                            items: [
+                            title: "Company",                            items: [
                                 { label: "About Us", href: "#about" },
                                 { label: "Sustainability", href: "#about" },
                                 { label: "Blog", href: "#" },
@@ -229,8 +202,7 @@ export default function SkincareTemplatePage() {
                             ]
                         },
                         {
-                            title: "Support",
-                            items: [
+                            title: "Support",                            items: [
                                 { label: "Contact Us", href: "#contact" },
                                 { label: "FAQ", href: "#faq" },
                                 { label: "Worldwide Shipping", href: "#" },
@@ -238,8 +210,7 @@ export default function SkincareTemplatePage() {
                             ]
                         },
                         {
-                            title: "Connect",
-                            items: [
+                            title: "Connect",                            items: [
                                 { label: "Instagram", href: "#" },
                                 { label: "Facebook", href: "#" },
                                 { label: "Pinterest", href: "#" },
